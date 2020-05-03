@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "server": "node server.js",
-    "start": "react-scripts start",
+    "start": "react-scripts start && node server.js",
     "start:local": "node server/server.js & export NODE_ENV=local &&  react-scripts start",
     "build": "export NODE_ENV=production && react-scripts build",
     "test": "react-scripts test --env=jsdom",
