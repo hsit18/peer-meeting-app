@@ -11,9 +11,9 @@ export default class VideoCall {
             iceTransportPolicy: 'relay',
             config: {
                 iceServers: [
-                    { urls: process.env.REACT_APP_STUN_SERVERS.split(',') },
+                    { urls: [process.env.REACT_APP_STUN_SERVERS] },
                     {
-                        urls: process.env.REACT_APP_TURN_SERVERS.split(','),
+                        urls: [process.env.REACT_APP_TURN_SERVERS],
                         username: process.env.REACT_APP_TURN_USERNAME,
                         credential: process.env.REACT_APP_TURN_CREDENCIAL
                     },
