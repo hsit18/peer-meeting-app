@@ -1,8 +1,6 @@
 # WebRTC with react
 
-This is a simple 1-to-1 video chat room example using react with webRTC and share screen API. This is experimental for learnig purposes. I hope that this project help you to learn something. You can test this on https://video-chat.dgurgel.now.sh put a room id that you want to create and click enter the other peer have to use the same room id. Sometimes it takes a bit longer to connect(no longer than one minute).
-
-<img height="300" alt="android screenshot" src="https://github.com/diegogurgel/react-webrtc/blob/master/screenshot/android_screenshot.png">
+This is a simple 1-to-1 video chat room example using react with webRTC and share screen API. 
 
 ### Running locally
 
@@ -19,7 +17,7 @@ Front-end files are inside `/src` and the server files are inside `/server` fold
 #### Install the dependencies
 
 ```shell
-npm i
+npm install
 ```
 
 #### Start the application

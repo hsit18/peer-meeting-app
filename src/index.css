@@ -1,39 +1,51 @@
-body, html {
+body,
+html,
+#root {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   height: 100%;
 }
-#root{
+#root {
+  background-color: #7cadd64a;
+}
+
+.enter-room-container {
+  margin: auto;
+  width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  background: #252839;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #7cadd6;
 }
-.enter-room-container{
-  margin: auto;
-  
+
+.enter-room-container img {
+  width: 100%;
 }
-.enter-room-container form{
+
+.enter-room-container form {
   display: flex;
+  justify-content: space-between;
 }
-.enter-room-container input{
-  height: 48px;
+.enter-room-container input {
+  padding: 10px;
+  width: 60%;
   background: transparent;
-  color: #FFF;
-  font-size: 20px;
+  color: #fff;
+  font-size: 16px;
   outline: none;
-  border:none;
-  border-bottom: 2px solid greenyellow;
+  border: 1px solid #19284b;
+  border-radius: 4px;
 }
 .enter-room-container button {
-  background: greenyellow;
-  width: 100px;
+  background: #19284b;
+  width: 30%;
   border: none;
-  margin-left: 24px;
-  font-size: 20px;
-  color: #252839;
+  color: #fff;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
+  border-radius: 10%;
 }

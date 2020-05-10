@@ -4,13 +4,13 @@
 #localVideo {
   height: 112px;
   right: 0;
-  margin: 24px auto;
+  margin: 10px;
   display: inline-block;
   border-radius: 4px;
 }
 .video-wrapper {
   height: 100vh;
-  background: #252839;
+  background: #7cadd6;
   width: 100%;
 }
 #remoteVideo {
@@ -27,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: greenyellow;
+  color: #19284b;
   height: 100vh;
 }
 
@@ -44,7 +44,7 @@
   border: none;
   box-shadow: 1px 1px 8px black;
   border-radius: 50%;
-  background-color: #252839;
+  background-color: #7cadd6;
   height: 64px;
   width: 64px;
 }
@@ -66,15 +66,12 @@
 @media screen and (orientation: landscape) {
   #localVideo {
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
-    margin-left: 0px;
-    margin-top: 0px;
   }
 }
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   #localVideo {
-    margin-left: 32px;
-    margin-top: 12px;
+    
   }
-}
+} */
