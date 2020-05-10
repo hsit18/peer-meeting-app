@@ -6,13 +6,13 @@ This is a simple 1-to-1 video chat room example using react with webRTC and shar
 
 To run this application you need to create a TURN account. You can create one using this service http://numb.viagenie.ca/cgi-bin/numbacct
 
-Change the `.env.example` to `.env` or `.env.local`
+Change the `.env.example` to `.env`
 
 Put your turn account on the .env file
 
 #### The folders
 
-Front-end files are inside `/src` and the server files are inside `/server` folder
+Front-end files are inside `/src` folder and the server as `server.js` 
 
 #### Install the dependencies
 
@@ -22,6 +22,11 @@ npm install
 
 #### Start the application
 
+## in one of the terminal start server
 ```shell
-npm run start:local
+node server.js
+```
+## in another terminal start client
+```shell
+npm run start:client
 ```

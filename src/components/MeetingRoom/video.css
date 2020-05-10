@@ -2,9 +2,11 @@
   display: flex;
 }
 #localVideo {
-  height: 112px;
+  position: absolute;
   right: 0;
-  margin: 10px;
+  top: 0;
+  height: 120px;
+  right: 0;
   display: inline-block;
   border-radius: 4px;
   z-index: 1;
@@ -74,15 +76,3 @@
     margin-top: 20%;
   }
 }
-@media screen and (orientation: landscape) {
-  #localVideo {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-/* @media screen and (min-width: 768px) {
-  #localVideo {
-    
-  }
-} */
