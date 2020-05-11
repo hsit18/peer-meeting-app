@@ -11,6 +11,7 @@ import {
   MicOffIcon,
   CamOnIcon,
   CamOffIcon,
+  GoToRepo,
 } from "../Icons";
 
 class MeetingRoom extends React.Component {
@@ -28,6 +29,10 @@ class MeetingRoom extends React.Component {
       micState: true,
       camState: true,
     };
+
+    this.setAudioLocal = this.setAudioLocal.bind(this);
+    this.setVideoLocal = this.setVideoLocal.bind(this);
+    this.getDisplay = this.getDisplay.bind(this);
   }
   videoCall = new VideoCall();
 
@@ -152,6 +157,10 @@ class MeetingRoom extends React.Component {
       return "The room is full";
     }
   };
+
+  goToRepo() {
+    window.open("https://github.com/hsit18/peer-meeting-app", "_blank");
+  }
   render() {
     return (
       <div className="video-wrapper">
@@ -173,12 +182,7 @@ class MeetingRoom extends React.Component {
         />
 
         <div className="controls">
-          <button
-            className="control-btn"
-            onClick={() => {
-              this.getDisplay();
-            }}
-          >
+          <button className="control-btn" onClick={this.getDisplay}>
             <ShareScreenIcon />
           </button>
 
@@ -188,6 +192,9 @@ class MeetingRoom extends React.Component {
 
           <button className="control-btn" onClick={this.setVideoLocal}>
             {this.state.camState ? <CamOnIcon /> : <CamOffIcon />}
+          </button>
+          <button className="control-btn" onClick={this.goToRepo}>
+            <GoToRepo />
           </button>
         </div>
 
